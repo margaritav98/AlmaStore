@@ -8,7 +8,6 @@ a.nav-link:hover {
   border-radius: 5px;
 }
 
-
 /* Este estilo debe eliminarse cuando los elementos se activen */
 .active {
   color: #fff !important;
@@ -34,14 +33,6 @@ input.form-control {
   border-radius: 0px;
   padding: 0px;
   background: #f8f9fa;
-}
-
-input:focus, input.form-control:focus {
-  outline:none !important;
-  outline-width: 0 !important;
-  box-shadow: none;
-  -moz-box-shadow: none;
-  -webkit-box-shadow: none;
 }
 
 .btn-search {
