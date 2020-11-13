@@ -1,15 +1,15 @@
 import { BrowserModule } from "@angular/platform-browser";
 import { NgModule } from "@angular/core";
-
+import { HttpClientModule } from "@angular/common/http";
 import { AppRoutingModule } from "./app-routing.module";
 import { AppComponent } from "./app.component";
 import { PreHeaderComponent } from "./components/header/pre-header/pre-header.component";
 import { HeaderComponent } from "./components/header/header/header.component";
 import { AngularFontAwesomeModule } from "angular-font-awesome";
 import { CarouselComponent } from "./components/carousel/carousel.component";
-import { ProductListComponent } from './components/mujeres/product-list/product-list.component';
-import { BlusasListComponent } from './components/mujeres/details/blusas-list/blusas-list.component';
-
+import { ProductListComponent } from "./components/mujeres/product-list/product-list.component";
+import { ProductComponent } from './components/product/product.component';
+import { ProductsCategoryComponent } from './components/mujeres/details/products-category/products-category.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -17,9 +17,15 @@ import { BlusasListComponent } from './components/mujeres/details/blusas-list/bl
     HeaderComponent,
     CarouselComponent,
     ProductListComponent,
-    BlusasListComponent,
+    ProductComponent,
+    ProductsCategoryComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule, AngularFontAwesomeModule],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    AngularFontAwesomeModule,
+    HttpClientModule,
+  ],
   providers: [],
   bootstrap: [AppComponent],
 })

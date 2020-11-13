@@ -8,6 +8,10 @@ a.nav-link:hover {
   border-radius: 5px;
 }
 
+.nav-c {
+  background-color: #f8f9fa;
+}
+
 /* Este estilo debe eliminarse cuando los elementos se activen */
 .active {
   color: #fff !important;

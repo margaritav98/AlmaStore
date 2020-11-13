@@ -1,0 +1,30 @@
+<div class="container">
+  <div class="collection-filter__item collection-filter__item--sort">
+    <div class="collection-filter__sort-container"><label for="SortBy" class="hidden-label"></label>
+      <select name="SortBy" id="SortBy" data-default-sortby="created-descending">
+        <option value="title-ascending" selected="selected">Ordenar</option>
+        <option value="manual">Características</option>
+        <option value="best-selling">Más vendidos</option>
+        <option value="title-ascending">Alfabéticamente, A-Z</option>
+        <option value="title-descending">Alfabéticamente, Z-A</option>
+        <option value="price-ascending">Precio, menor a mayor</option>
+        <option value="price-descending">Precio, mayor a menor</option>
+        <option value="created-ascending">Fecha: antiguo(a) a reciente</option>
+        <option value="created-descending" selected="selected">Fecha: reciente a antiguo(a)</option>
+      </select>
+    </div>
+  </div>
+  <div class="products">
+    <div class="mt-4" *ngFor="let product of productos">
+      <a>
+        <img src={{url+product.imagen}} alt="">
+      </a>
+      <div class="nameProduct mt-2">
+        {{product.nombre_producto}}
+      </div>
+      <div class="price">
+        {{product.precio_unitario  | currency: 'USD'}} IVA INCLUIDO
+      </div>
+    </div>
+  </div>
+</div>
