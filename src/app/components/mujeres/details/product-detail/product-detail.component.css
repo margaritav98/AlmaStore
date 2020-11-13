@@ -1,0 +1,114 @@
+.img-detail {
+  display: grid;
+  grid-template-columns: 150px 150px 150px;
+}
+
+.detail {
+  width: 130px;
+}
+
+.title {
+  font-size: 34px;
+  line-height: 1;
+  font-weight: 400;
+  color: #696969;
+  margin-top: 35px !important;
+  margin-bottom: 10px;
+}
+
+.price {
+  font-size: 18px;
+  letter-spacing: 0;
+  color: #333;
+  font-weight: 700;
+  margin-bottom: 17px;
+}
+
+.variant-wrapper {
+  margin-bottom: -12px;
+}
+
+.variant__label[for] {
+  display: block;
+  margin-bottom: 10px;
+  cursor: default;
+  font-family: "Futura", sans-serif;
+}
+
+.variant-input-wrap {
+  border: 0;
+  padding: 0;
+  margin: 0 0 20px;
+  position: relative;
+}
+
+fieldset {
+  border: 1px solid #e8e8e1;
+  padding: 15px;
+}
+
+.variant-input {
+  display: inline-block;
+  border: 2px solid;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+input[type="radio"] {
+  margin: 0 10px 0 0;
+  padding: 0;
+  width: auto;
+}
+
+.variant-input-wrap input[type="radio"]:checked + label {
+  box-shadow: 0 0 0 2px #000;
+}
+
+button {
+  background: transparent;
+  padding-bottom: 15px;
+  padding-top: 15px;
+  padding-left: 30px;
+  padding-right: 30px;
+  border: 1px solid;
+}
+
+.btn-add {
+  display: flex;
+  justify-content: center;
+  margin-top: 110px;
+}
+
+.btn-buy {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.buy {
+  background-color: black;
+  color: white;
+  font-weight: 600;
+  padding-left: 45px;
+  padding-right: 45px;
+}
+
+.buy:hover {
+  background-color: white;
+  color: black;
+  border: 2px solid;
+}
+
+.add {
+  background-color: #8c8c8c;
+  color: white;
+  font-weight: 600;
+}
+
+.add:hover {
+  border: 2px solid #8c8c8c;
+  background-color: white;
+  color: #8c8c8c;
+}

@@ -10,6 +10,7 @@ import { CarouselComponent } from "./components/carousel/carousel.component";
 import { ProductListComponent } from "./components/mujeres/product-list/product-list.component";
 import { ProductComponent } from './components/product/product.component';
 import { ProductsCategoryComponent } from './components/mujeres/details/products-category/products-category.component';
+import { ProductDetailComponent } from './components/mujeres/details/product-detail/product-detail.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -19,6 +20,7 @@ import { ProductsCategoryComponent } from './components/mujeres/details/products
     ProductListComponent,
     ProductComponent,
     ProductsCategoryComponent,
+    ProductDetailComponent,
   ],
   imports: [
     BrowserModule,
