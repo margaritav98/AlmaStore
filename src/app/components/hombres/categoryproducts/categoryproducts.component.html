@@ -1,0 +1,15 @@
+<div class="container">
+  <div class="products">
+    <div class="mt-4" *ngFor="let product of productos">
+      <a [routerLink]="['/product/detail', product.id_producto]">
+        <img src={{url+product.imagen}} alt="">
+      </a>
+      <div class="nameProduct mt-2">
+        {{product.nombre_producto}}
+      </div>
+      <div class="price">
+        {{product.precio_unitario  | currency: 'USD'}} IVA INCLUIDO
+      </div>
+    </div>
+  </div>
+</div>

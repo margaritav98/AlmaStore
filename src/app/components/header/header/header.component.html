@@ -12,14 +12,14 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item ml-4">
-
-            <a class="nav-link active pt-1 pb-1 pl-3 pr-3" href="mujeres">{{mujeres.descripcion}}</a>
+            <a class="nav-link pt-1 pb-1 pl-3 pr-3" href="mujeres" routerLinkActive="activo"
+              [routerLinkActiveOptions]="{exact: true}">{{mujeres.descripcion}}</a>
           </li>
           <li class="nav-item ml-4">
             <a class="nav-link pt-1 pb-1 pl-3 pr-3" href="hombres">{{hombres.descripcion}}</a>
           </li>
           <li class="nav-item ml-4">
-            <a class="nav-link pt-1 pb-1 pl-3 pr-3" href="hombres">{{ninos.descripcion}}</a>
+            <a class="nav-link pt-1 pb-1 pl-3 pr-3" href="kids">{{ninos.descripcion}}</a>
           </li>
         </ul>
         <ul>

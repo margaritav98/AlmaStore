@@ -1,0 +1,37 @@
+<div class="fondo">
+  <div class="title">LOGIN</div>
+</div>
+<div class="contenedorFormularioInicioSesion mt-5 mb-5">
+  <form [formGroup]="loginForm" action="" class="formularios">
+    <input formControlName="correo" type="text" class="inputsInicioSesion" placeholder="Usuario" />
+    <div *ngIf="f.correo.errors && (f.correo.dirty || f.correo.touched)">
+      <div class="error" *ngIf="f.correo.errors.required">
+        Correo requerido
+      </div>
+      <div class="error" *ngIf="f.correo.errors.pattern && (f.correo.dirty || f.correo.touched)">
+        Correo es inválido
+      </div>
+    </div>
+
+    <input formControlName="password" type="password" class="inputsInicioSesion" placeholder="Contraseña" />
+    <div *ngIf="f.password.errors">
+      <div *ngIf="
+          f.password.errors.required && (f.password.dirty || f.password.touched)
+        " class="error">
+        Contraseña es requerida
+      </div>
+      <div class="error" *ngIf="f.password.errors.minlength">
+        La contraseña debe contener mas de 6 caracteres
+      </div>
+    </div>
+    <div class="buttons">
+      <button type="submit" class="btn btn-dark ml-2 mr-5" onclick="login()">
+        Iniciar Sesión
+      </button>
+      <button type="submit" class="btn btn-dark">
+        Regístrate
+      </button>
+    </div>
+
+  </form>
+</div>

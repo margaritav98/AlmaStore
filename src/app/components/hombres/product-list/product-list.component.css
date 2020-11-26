@@ -1,0 +1,33 @@
+.grid-x {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-flow: row wrap;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
+}
+
+.grid-x .cell {
+  margin-bottom: 0.5rem;
+}
+
+@media print, screen and (min-width: 40em) {
+  .grid-x {
+    padding-left: 0.5rem;
+  }
+
+  .grid-x > .medium-4 {
+    width: 33.33333%;
+  }
+
+  .grid-x > .cell {
+    padding-right: 0.5rem;
+  }
+}
+
+a {
+  cursor: pointer;
+}

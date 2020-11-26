@@ -18,6 +18,12 @@ export class MainService {
   readonly URL_API_PRODUCTOS =
     "http://localhost/EP2/backend_almastore/api.php/getProductos";
 
+  readonly URL_API_DETALLE =
+    "http://localhost/EP2/backend_almastore/api.php/getDetalleProducto";
+
+  readonly URL_API_LOGIN =
+    "http://localhost/EP2/backend_almastore/api.php/f_Login";
+
   constructor(private http: HttpClient) {
     this.seleccionCategorias = new Categoria();
   }
@@ -37,5 +43,23 @@ export class MainService {
       }),
     };
     return this.http.post(this.URL_API_PRODUCTOS, genero, httpOptions);
+  }
+
+  obtenerDetalleProducto(id_producto) {
+    const httpOptions = {
+      headers: new HttpHeaders({
+        "Content-Type": "application/json",
+      }),
+    };
+    return this.http.post(this.URL_API_DETALLE, id_producto, httpOptions);
+  }
+
+  login(usuario) {
+    const httpOptions = {
+      headers: new HttpHeaders({
+        "Content-Type": "application/json",
+      }),
+    };
+    return this.http.post(this.URL_API_DETALLE, usuario, httpOptions);
   }
 }

@@ -1,0 +1,47 @@
+footer {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: #fff;
+  color: #000;
+  border-top: 1px solid #e8e8e1;
+  display: grid;
+  grid-template-columns: 25% 50% 25%;
+}
+
+ul > li {
+  text-transform: uppercase;
+  list-style: none;
+  font-family: "Futura", sans-serif;
+}
+
+a {
+  color: #000;
+}
+
+a:link,
+a:visited,
+a:active,
+a:hover {
+  text-decoration: none;
+}
+
+.list-logo > ul > li {
+  text-align: center;
+}
+
+img {
+  width: 150px;
+}
+
+h4 {
+  font-family: "Futura", sans-serif;
+  font-size: 1rem;
+}
+
+.redes > ul {
+  display: inline-flex;
+}
+
+.redes > ul > li > i {
+  cursor: pointer;
+}
